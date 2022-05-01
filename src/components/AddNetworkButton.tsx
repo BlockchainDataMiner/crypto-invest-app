@@ -63,7 +63,7 @@ export default function AddNetworkButton(/*props: any*/) {
 
     return (
         <Box bg='blackAlpha.500'>
-            <Button onClick={addNetwork}>Add AVAX Network to Metamask</Button>
+            <Button onClick={addNetwork}>Add AVAX Network\r\n to Metamask</Button>
         </Box>
     );
 }
