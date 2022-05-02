@@ -347,7 +347,7 @@ export default function GetDividendsButton() {
 
     return (
         <Box bg='blackAlpha.500'>
-            <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='sm' fontWeight='extrabold'
+            <Text m={2} bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='sm' fontWeight='extrabold'
                   align='left'>{"Current dividends : "}</Text>
 
             {/*<Text color="white" fontSize="sm" align={"center"}>{value2}</Text>*/}
@@ -363,7 +363,7 @@ export default function GetDividendsButton() {
             </NumberInput>
 
 
-            <Button onClick={getDividends}>Get current dividends</Button>
+            <Button m={2} onClick={getDividends}>Get current dividends</Button>
         </Box>
     );
 }

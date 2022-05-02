@@ -33,7 +33,7 @@ export default function App() {
             </Text>
             <Box h='10' bg='gray.900'><Text color='gray.400' align='left'>Welcome to our staking platform</Text></Box>
 
-            <Container bg='black'>
+            <Container bg='black' m={2}>
                 <Grid templateColumns='repeat(2, 0fr)'>
                     <GridItem><AddNetworkButton/></GridItem>
                     <GridItem><ConnectButton/></GridItem>
@@ -41,7 +41,7 @@ export default function App() {
                 </Grid>
             </Container>
 
-            <Container bg='black'>
+            <Container bg='black' m={2}>
                 <GridItem><GetDividendsButton/></GridItem>
                 <GridItem><WithdrawButton/></GridItem>
             </Container>

@@ -57,7 +57,7 @@ export default function ConnectButton() {
                     backgroundColor: "gray.700",
                 }}
                 borderRadius="xl"
-                m="1px"
+                m={2}
                 px={3}
                 height="38px"
             >

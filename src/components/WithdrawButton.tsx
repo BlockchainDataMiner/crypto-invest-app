@@ -65,7 +65,7 @@ export default function WithdrawButton() {
 
     return (
         <Box bg='blackAlpha.500'>
-                <Button onClick={getDividends}>Withdraw dividends</Button>
+                <Button m={2} onClick={getDividends}>Withdraw dividends</Button>
         </Box>
     );
 }
