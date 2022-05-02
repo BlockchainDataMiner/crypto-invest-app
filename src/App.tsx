@@ -36,7 +36,7 @@ export default function App() {
 
             <Box bg='black'>
                 {/*<Center><AddNetworkButton /><Box w='5'/><ConnectButton /></Center>*/}
-                <Grid templateColumns='repeat(2, 1fr)' width='500px'>
+                <Grid templateColumns='repeat(2, 1fr)' width='380px'>
                     <GridItem><AddNetworkButton /></GridItem>
                     <GridItem><ConnectButton /></GridItem>
                 </Grid>
