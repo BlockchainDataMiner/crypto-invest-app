@@ -386,7 +386,7 @@ export default function ConnectButton() {
                 size='sm'
                 color='gray.300'
                 isDisabled={true}
-                width='400px'
+                width='350px'
                 /*bgGradient='linear(to-l, #000080, #0000FF)'*/
             />
             <Box h='5'/>
@@ -399,7 +399,7 @@ export default function ConnectButton() {
                          max={50}
                          color='gray.300'
                          precision={2} step={0.01}
-                         width='400px'
+                         width='350px'
             >
                 <NumberInputField/>
                 <NumberInputStepper>

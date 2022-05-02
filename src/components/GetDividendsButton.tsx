@@ -357,7 +357,7 @@ export default function GetDividendsButton() {
                          min={0.000000001}
                          max={50}
                          color='gray.300'
-                         width='400px'
+                         width='350px'
             >
                 <NumberInputField/>
             </NumberInput>
