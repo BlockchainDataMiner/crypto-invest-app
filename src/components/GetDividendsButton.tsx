@@ -70,9 +70,9 @@ export default function GetDividendsButton() {
     return (
         <Box bg='blackAlpha.500'>
             <SimpleGrid columns={3} spacing={25}>
-                <Text color="white" fontSize="x-large" align={"center"}>{"Current dividends : "}</Text>
+                <Text color="white" fontSize="sm" align={"center"}>{"Current dividends : "}</Text>
+                <Text color="white" fontSize="sm" align={"center"}>{value2}</Text>
                 <Button onClick={getDividends}>Get current dividends</Button>
-                <Text color="white" fontSize="x-large" align={"center"}>{value2}</Text>
             </SimpleGrid>
         </Box>
 );
