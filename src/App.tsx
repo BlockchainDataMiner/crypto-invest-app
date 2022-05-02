@@ -12,6 +12,7 @@ import { Center, Square, Circle } from '@chakra-ui/react'
 import React, {useEffect} from "react";
 import AddNetworkButton from "./components/AddNetworkButton";
 import { Grid, GridItem } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
 
 export default function App() {
 
@@ -26,30 +27,25 @@ export default function App() {
 
     return (
         <ChakraProvider>
-            {/*<Center>*/}
-                <Image src="/avaxroyalstaker.png" alt="avax royal staker"/>
-                <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold'>
-                    Welcome to Avax Royal Staker
-                </Text>
-            {/*</Center>*/}
+            <Image src="/avaxroyalstaker.png" alt="avax royal staker"/>
+            <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold'>
+                Welcome to Avax Royal Staker
+            </Text>
             <Box h='10' bg='gray.900'><Text color='gray.400' align='left'>Welcome to our staking platform</Text></Box>
 
-            <Box bg='black'>
-                {/*<Center><AddNetworkButton /><Box w='5'/><ConnectButton /></Center>*/}
-                <Grid templateColumns='repeat(2, 1fr)' width='380px'>
-                    <GridItem><AddNetworkButton /></GridItem>
-                    <GridItem><ConnectButton /></GridItem>
+            <Container bg='black'>
+                <Grid templateColumns='repeat(2, 0fr)'>
+                    <GridItem><AddNetworkButton/></GridItem>
+                    <GridItem><ConnectButton/></GridItem>
+                    <GridItem><InvestButton/></GridItem>
                 </Grid>
+            </Container>
 
-                <Box h='5'/>
-                <Center><InvestButton /></Center>
-            </Box>
-            <Layout>
-                <Box h='5'/>
-                <GetDividendsButton />
-                <Box h='5'/>
-                <WithdrawButton />
-            </Layout>
+            <Container bg='black'>
+                <GridItem><GetDividendsButton/></GridItem>
+                <GridItem><WithdrawButton/></GridItem>
+            </Container>
+
         </ChakraProvider>
     )
 }

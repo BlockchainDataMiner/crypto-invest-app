@@ -65,11 +65,7 @@ export default function WithdrawButton() {
 
     return (
         <Box bg='blackAlpha.500'>
-            <SimpleGrid columns={3} spacing={25}>
-                <Text color="white" fontSize="sm" align={"center"}>{"Click to withdraw : "}</Text>
-                <Text color="white" fontSize="sm" align={"center"}>{value2}</Text>
                 <Button onClick={getDividends}>Withdraw dividends</Button>
-            </SimpleGrid>
         </Box>
     );
 }
