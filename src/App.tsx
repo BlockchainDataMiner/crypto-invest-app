@@ -31,7 +31,6 @@ export default function App() {
             <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold'>
                 Welcome to Avax Royal Staker
             </Text>
-            <Box h='10' bg='gray.900'><Text color='gray.400' align='left'>Welcome to our staking platform</Text></Box>
 
             <Container bg='black' m={2}>
                 <Grid templateColumns='repeat(2, 0fr)'>
