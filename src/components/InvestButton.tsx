@@ -16,6 +16,7 @@ import { ethers } from "ethers";
 import {BigNumber} from "@ethersproject/bignumber";
 import { Textarea } from '@chakra-ui/react'
 import { Input } from '@chakra-ui/react'
+import { Center, Square, Circle } from '@chakra-ui/react'
 
 type Props = {
     handleOpenModal: any;
@@ -106,8 +107,8 @@ export default function ConnectButton() {
 
     return (
         <Box bg='blackAlpha.500' w='60%'>
-            <SimpleGrid columns={3} spacing={12}>
-                <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold' align='right'>{"Referrer : "}</Text>
+            {/*<SimpleGrid columns={3} spacing={12}>*/}
+                <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='sm' fontWeight='extrabold' align='left'>{"Referrer : "}</Text>
                 <Input
                     value={txt}
                     onChange={handleInputChange}
@@ -115,12 +116,13 @@ export default function ConnectButton() {
                     size='sm'
                     color='gray.300'
                     isDisabled={true}
+                    width='400px'
                     /*bgGradient='linear(to-l, #000080, #0000FF)'*/
                 />
-            </SimpleGrid>
+            {/*</SimpleGrid>*/}
             <Box h='5'/>
-            <SimpleGrid columns={3} spacing={12}>
-                <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold' align='right'>{"Amount to invest : "}</Text>
+            {/*<SimpleGrid columns={3} spacing={12}>*/}
+                <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='sm' fontWeight='extrabold' align='left'>{"Amount to invest : "}</Text>
                 <NumberInput focusBorderColor='red.200'
                     onChange={(valueString) => setValue(parse(valueString))}
                     value={format(value)}
@@ -128,6 +130,7 @@ export default function ConnectButton() {
                     max={50}
                     color='gray.300'
                     precision={2} step={0.01}
+                    width='400px'
                     /*bgGradient='linear(to-l, #000080, #0000FF)'*/
                 >
                     <NumberInputField />
@@ -136,8 +139,9 @@ export default function ConnectButton() {
                         <NumberDecrementStepper />
                     </NumberInputStepper>
                 </NumberInput>
-                <Button width='50%' onClick={investAmount}>Invest</Button>
-            </SimpleGrid>
+                    <Button width='200px' variant={'solid'} onClick={investAmount}>Invest</Button>
+            {/*</SimpleGrid>*/}
+
         </Box>
     );
 }
