@@ -46,8 +46,8 @@ export default function AddNetworkButton(/*props: any*/) {
     }
 
     function addAvalancheNetwork() {
-        const provider = new ethers.providers.Web3Provider((window as any).ethereum, "any");
         try {
+            const provider = new ethers.providers.Web3Provider((window as any).ethereum, "any");
             provider.send("wallet_addEthereumChain", [{
                 chainName: 'Avalanche C-Chain Mainnet',
                 chainId: '0xA86A',
@@ -57,7 +57,8 @@ export default function AddNetworkButton(/*props: any*/) {
             },]).then(r => {
             }).catch();
         } catch (e) {
-            alert("Cannot add network : " + JSON.stringify(e));
+            //alert("Cannot add network : " + JSON.stringify(e));
+            alert("Please install Metamask before that.");
         }
     }
 
