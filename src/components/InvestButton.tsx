@@ -106,7 +106,7 @@ export default function ConnectButton() {
     }
 
     return (
-        <Box bg='blackAlpha.500' w='60%'>
+        <Box bg='blackAlpha.500' w='400%'>
             {/*<SimpleGrid columns={3} spacing={12}>*/}
                 <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='sm' fontWeight='extrabold' align='left'>{"Referrer : "}</Text>
                 <Input
