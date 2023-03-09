@@ -37,7 +37,7 @@ export default function App() {
                     <GridItem><ConnectButton/></GridItem>
                     <GridItem><InvestButton/></GridItem>
                     <GridItem m={4}>
-                        <Text w='600px' fontSize='15px' color='yellow'>Earn 3% per day.</Text>
+                        <Text w='700px' fontSize='15px' color='yellow'>Earn 3% per day.</Text>
                         <Text fontSize='15px' color='yellow'>1: Connect your wallet</Text>
                         <Text fontSize='15px' color='yellow'>2: Invest at least 0.05</Text>
                         <Text fontSize='15px' color='yellow'>3: [Get current dividends] = see earnings</Text>
