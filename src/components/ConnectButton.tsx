@@ -72,6 +72,6 @@ export default function ConnectButton() {
             </Button>
         </Box>
     ) : (
-        <Button onClick={handleConnectWallet}>Connect to a wallet</Button>
+        <Button m={2} onClick={handleConnectWallet}>Connect to a wallet</Button>
     );
 }
