@@ -40,7 +40,7 @@ export default function GetDividendsButton() {
     } = require("@ethersproject/bignumber");
 
     const myContractInfos = {
-        address: "0xFbDA1587551d49d307fF10ce02C2DDD1aD9A6a8E",
+        address: "0x02f1557105afeaDac4BA45f8848581e4F075523C", // BSC TESNET
         abi: [{
             "inputs": [{"internalType": "address payable", "name": "wallet", "type": "address"}],
             "stateMutability": "nonpayable",
