@@ -32,7 +32,7 @@ export default function App() {
                 Welcome to Avax Royal Staker 2.3
             </Text>
 
-                <Grid templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
+                <Grid m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
                     <GridItem><AddNetworkButton/></GridItem>
                     <GridItem><ConnectButton/></GridItem>
                     <GridItem><InvestButton/></GridItem>
