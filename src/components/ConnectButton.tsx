@@ -43,8 +43,8 @@ export default function ConnectButton() {
             py="0"
         >
             <Box px="3">
-                <Text color="white" fontSize="md">
-                    {etherBalance && parseFloat(formatEther(etherBalance)).toFixed(3)} ETH
+                <Text color="white" fontSize="md" width="150px">
+                    {etherBalance && parseFloat(formatEther(etherBalance)).toFixed(3) + " ETH"}
                 </Text>
             </Box>
             <Button
