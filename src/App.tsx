@@ -28,12 +28,11 @@ export default function App() {
     return (
         <ChakraProvider>
             <Image src="/avaxroyalstaker.png" alt="avax royal staker"/>
-            <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold'>
-                Welcome to Avax Royal Staker 2.1
+            <Text m={2} bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold'>
+                Welcome to Avax Royal Staker 2.2
             </Text>
 
-            <Container bg='black' m={2} maxWidth='720px'>
-                <Grid templateColumns='repeat(2, 0fr)'>
+                <Grid templateColumns='repeat(2, 0fr)' bg='black'>
                     <GridItem><AddNetworkButton/></GridItem>
                     <GridItem><ConnectButton/></GridItem>
                     <GridItem><InvestButton/></GridItem>
@@ -45,7 +44,6 @@ export default function App() {
                         <Text fontSize='15px' color='yellow'>4: [Withdraw dividends] = withdraw earnings</Text>
                     </GridItem>
                 </Grid>
-            </Container>
 
             <Container bg='black' m={2}>
                 <GridItem><GetDividendsButton/></GridItem>
