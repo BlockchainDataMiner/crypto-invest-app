@@ -28,7 +28,7 @@ export default function App() {
     return (
         <ChakraProvider>
             <Image m={2} src="/avaxroyalstaker.png" alt="avax royal staker"/>
-            <Text m={2} bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold'>
+            <Text m={2} color='whiteAlpha.700' fontSize='xl' fontWeight='extrabold'>
                 Welcome to Avax Royal Staker 2.5
             </Text>
 
