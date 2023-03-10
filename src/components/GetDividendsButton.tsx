@@ -20,6 +20,8 @@ import { ethers } from "ethers";
     handleOpenModal: any;
 }*/
 
+import { myContractInfos } from "./InvestButton";
+
 export default function GetDividendsButton() {
     const {activateBrowserWallet, account} = useEthers();
     const etherBalance = useEtherBalance(account);
@@ -39,7 +41,7 @@ export default function GetDividendsButton() {
         BigNumberish
     } = require("@ethersproject/bignumber");
 
-    const myContractInfos = {
+    /*const myContractInfos = {
         address: "0x02f1557105afeaDac4BA45f8848581e4F075523C", // BSC TESNET
         abi: [{
             "inputs": [{"internalType": "address payable", "name": "wallet", "type": "address"}],
@@ -311,7 +313,7 @@ export default function GetDividendsButton() {
             "stateMutability": "view",
             "type": "function"
         }]
-    }
+    }*/
 
     function getDividends() {
         try {
