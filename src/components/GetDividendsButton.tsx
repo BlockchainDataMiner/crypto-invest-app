@@ -75,7 +75,7 @@ export default function GetDividendsButton() {
 
     return (
         <Box bg='blackAlpha.500'>
-            <Text m={2} color='yellow' fontSize='sm' fontWeight='bold'
+            <Text as='samp' m={2} color='yellow' fontSize='sm' fontWeight='bold'
                   align='left'>{"Current dividends : "}</Text>
 
             {/*<Text color="white" fontSize="sm" align={"center"}>{value2}</Text>*/}

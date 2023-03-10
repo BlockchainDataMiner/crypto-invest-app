@@ -105,7 +105,7 @@ export default function ConnectButton() {
 
     return (
         <Box bg='blackAlpha.500'>
-            <Text m={2} color='yellow' fontSize='sm' fontWeight='bold'
+            <Text as='samp' m={2} color='yellow' fontSize='sm' fontWeight='bold'
                   align='left'>{"Referrer : "}</Text>
             <Input
                 value={txt}
@@ -119,7 +119,7 @@ export default function ConnectButton() {
                 /*bgGradient='linear(to-l, #000080, #0000FF)'*/
             />
             <Box h='5'/>
-            <Text m={2} color='yellow' fontSize='sm' fontWeight='bold'
+            <Text as='samp' m={2} color='yellow' fontSize='sm' fontWeight='bold'
                   align='left'>{"Amount to invest : "}</Text>
             <NumberInput focusBorderColor='red.200'
                          onChange={(valueString) => setValue(parse(valueString))}
