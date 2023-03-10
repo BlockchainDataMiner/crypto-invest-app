@@ -62,9 +62,45 @@ export default function AddNetworkButton(/*props: any*/) {
         }
     }
 
+    function addBscTestNetwork() {
+        try {
+            const provider = new ethers.providers.Web3Provider((window as any).ethereum, "any");
+            provider.send("wallet_addEthereumChain", [{
+                chainName: 'BSC Testnet',
+                chainId: '0x61',
+                nativeCurrency: {name: 'BNB', decimals: 18, symbol: 'BNB'},
+                // rpcUrls: ['https://polygon-rpc.com/'],
+                rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
+            },]).then(r => {
+            }).catch();
+        } catch (e) {
+            //alert("Cannot add network : " + JSON.stringify(e));
+            alert("Please install Metamask before that.");
+        }
+    }
+
+    function addBscNetwork() {
+        try {
+            const provider = new ethers.providers.Web3Provider((window as any).ethereum, "any");
+            provider.send("wallet_addEthereumChain", [{
+                chainName: 'BSC',
+                chainId: '0x38',
+                nativeCurrency: {name: 'BNB', decimals: 18, symbol: 'BNB'},
+                // rpcUrls: ['https://polygon-rpc.com/'],
+                rpcUrls: ['https://bsc-dataseed.binance.org/'],
+            },]).then(r => {
+            }).catch();
+        } catch (e) {
+            //alert("Cannot add network : " + JSON.stringify(e));
+            alert("Please install Metamask before that.");
+        }
+    }
+
+
+
     return (
         <Box bg='blackAlpha.500'>
-            <Button colorScheme='orange' variant='outline' m={2} onClick={addNetwork}>Add AVAX Network<br/>to Metamask</Button>
+            <Button colorScheme='orange' variant='outline' m={2} onClick={addBscTestNetwork}>Add BSC Test Network<br/>to Metamask</Button>
         </Box>
     );
 }
