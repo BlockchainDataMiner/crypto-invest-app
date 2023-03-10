@@ -409,7 +409,7 @@ export default function ConnectButton() {
                     <NumberDecrementStepper/>
                 </NumberInputStepper>
             </NumberInput>
-            <Button m={2} width='200px' variant={'solid'} onClick={investAmount}>Invest</Button>
+            <Button colorScheme='orange' variant='outline' m={2} width='200px' onClick={investAmount}>Invest</Button>
 
         </Box>
     );

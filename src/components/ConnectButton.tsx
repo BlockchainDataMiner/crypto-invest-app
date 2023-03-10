@@ -72,6 +72,6 @@ export default function ConnectButton() {
             </Button>
         </Box>
     ) : (
-        <Button m={2} onClick={handleConnectWallet}>Connect to a wallet</Button>
+        <Button colorScheme='orange' variant='outline' m={2} onClick={handleConnectWallet}>Connect to a wallet</Button>
     );
 }

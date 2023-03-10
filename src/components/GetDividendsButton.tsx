@@ -364,7 +364,7 @@ export default function GetDividendsButton() {
             </NumberInput>
 
 
-            <Button m={2} onClick={getDividends}>Get current dividends</Button>
+            <Button colorScheme='orange' variant='outline' m={2} onClick={getDividends}>Get current dividends</Button>
         </Box>
     );
 }
