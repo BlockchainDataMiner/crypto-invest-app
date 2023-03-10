@@ -25,7 +25,7 @@ export default function App() {
         <ChakraProvider>
             <Image m={2} src="/avaxroyalstaker.png" alt="avax royal staker"/>
             <Text m={2} color='whiteAlpha.700' fontSize='xl' fontWeight='extrabold'>
-                Welcome to Avax Royal Staker 2.5
+                Welcome to Avax Royal Staker 2.6
             </Text>
 
                 <Grid border='1px' borderColor='gray' m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
