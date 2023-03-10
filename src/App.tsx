@@ -36,19 +36,23 @@ export default function App() {
                     <GridItem><AddNetworkButton/></GridItem>
                     <GridItem><ConnectButton/></GridItem>
                     <GridItem><InvestButton/></GridItem>
-                    <GridItem m={4}>
-                        <Text w='200px' fontSize='15px' color='yellow'>Earn 3% per day.</Text>
-                        <Text fontSize='15px' color='yellow'>1: Connect your wallet</Text>
-                        <Text fontSize='15px' color='yellow'>2: Invest at least 0.05</Text>
-                        <Text fontSize='15px' color='yellow'>3: [Get current dividends] = see earnings</Text>
-                        <Text fontSize='15px' color='yellow'>4: [Withdraw dividends] = withdraw earnings</Text>
-                    </GridItem>
                 </Grid>
 
                 <Grid border='1px' borderColor='gray' m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
                     <GridItem><GetDividendsButton/></GridItem>
                     <GridItem><WithdrawButton/></GridItem>
                 </Grid>
+
+                <Grid border='1px' borderColor='gray' m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
+                <GridItem m={4}>
+                        <Text w='800px' fontSize='15px' color='yellow'>Earn 3% per day.</Text>
+                        <Text fontSize='15px' color='yellow'>1: Connect your wallet</Text>
+                        <Text fontSize='15px' color='yellow'>2: Invest at least 0.05</Text>
+                        <Text fontSize='15px' color='yellow'>3: [Get current dividends] = see earnings</Text>
+                        <Text fontSize='15px' color='yellow'>4: [Withdraw dividends] = withdraw earnings</Text>
+                    </GridItem>
+                </Grid>
+    
 
         </ChakraProvider>
     )
