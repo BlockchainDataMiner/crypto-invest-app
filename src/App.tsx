@@ -32,7 +32,7 @@ export default function App() {
                 Welcome to Avax Royal Staker 2.5
             </Text>
 
-                <Grid m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
+                <Grid border='1px' borderColor='gray' m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
                     <GridItem><AddNetworkButton/></GridItem>
                     <GridItem><ConnectButton/></GridItem>
                     <GridItem><InvestButton/></GridItem>
@@ -45,7 +45,7 @@ export default function App() {
                     </GridItem>
                 </Grid>
 
-                <Grid m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
+                <Grid border='1px' borderColor='gray' m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
                     <GridItem><GetDividendsButton/></GridItem>
                     <GridItem><WithdrawButton/></GridItem>
                 </Grid>
