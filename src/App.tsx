@@ -27,9 +27,9 @@ export default function App() {
 
     return (
         <ChakraProvider>
-            <Image src="/avaxroyalstaker.png" alt="avax royal staker"/>
+            <Image m={2} src="/avaxroyalstaker.png" alt="avax royal staker"/>
             <Text m={2} bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='xl' fontWeight='extrabold'>
-                Welcome to Avax Royal Staker 2.4
+                Welcome to Avax Royal Staker 2.5
             </Text>
 
                 <Grid m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
@@ -37,7 +37,7 @@ export default function App() {
                     <GridItem><ConnectButton/></GridItem>
                     <GridItem><InvestButton/></GridItem>
                     <GridItem m={4}>
-                        <Text w='700px' fontSize='15px' color='yellow'>Earn 3% per day.</Text>
+                        <Text w='300px' fontSize='15px' color='yellow'>Earn 3% per day.</Text>
                         <Text fontSize='15px' color='yellow'>1: Connect your wallet</Text>
                         <Text fontSize='15px' color='yellow'>2: Invest at least 0.05</Text>
                         <Text fontSize='15px' color='yellow'>3: [Get current dividends] = see earnings</Text>
