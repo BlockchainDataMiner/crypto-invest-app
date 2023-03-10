@@ -38,7 +38,7 @@ export default function App() {
                     <GridItem><InvestButton/></GridItem>
                 </Grid>
 
-                <Grid border='1px' borderColor='gray' m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
+                <Grid alignItems='flex-end' border='1px' borderColor='gray' m={2} templateColumns='repeat(2, 0fr)' bg='black' w='800px'>
                     <GridItem><GetDividendsButton/></GridItem>
                     <GridItem><WithdrawButton/></GridItem>
                 </Grid>
