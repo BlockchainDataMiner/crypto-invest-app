@@ -10,17 +10,17 @@ import {
     NumberDecrementStepper,
 } from '@chakra-ui/react'
 import React, {useEffect} from "react";
-import { SimpleGrid } from '@chakra-ui/react'
+//import { SimpleGrid } from '@chakra-ui/react'
 
 import { ethers } from "ethers";
 import {BigNumber} from "@ethersproject/bignumber";
-import { Textarea } from '@chakra-ui/react'
+//import { Textarea } from '@chakra-ui/react'
 import { Input } from '@chakra-ui/react'
-import { Center, Square, Circle } from '@chakra-ui/react'
+//import { Center, Square, Circle } from '@chakra-ui/react'
 
-type Props = {
+/*type Props = {
     handleOpenModal: any;
-}
+}*/
 
 export default function ConnectButton() {
     const {activateBrowserWallet, account} = useEthers();

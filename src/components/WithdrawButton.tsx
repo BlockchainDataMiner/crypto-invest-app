@@ -2,23 +2,23 @@
 import { Button, Box, Text } from "@chakra-ui/react";
 import { useEthers, useEtherBalance } from "@usedapp/core";
 
-import {
+/*import {
     NumberInput,
     NumberInputField,
     NumberInputStepper,
     NumberIncrementStepper,
     NumberDecrementStepper,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react'*/
 
 import React, {useEffect} from "react";
-import { SimpleGrid } from '@chakra-ui/react'
+//import { SimpleGrid } from '@chakra-ui/react'
 
 import { ethers } from "ethers";
-import {BigNumber} from "@ethersproject/bignumber";
+//import {BigNumber} from "@ethersproject/bignumber";
 
-type Props = {
+/*type Props = {
     handleOpenModal: any;
-}
+}*/
 
 export default function WithdrawButton() {
     const { activateBrowserWallet, account } = useEthers();

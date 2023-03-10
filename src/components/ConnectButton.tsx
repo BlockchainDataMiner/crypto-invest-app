@@ -4,13 +4,11 @@ import { useEthers, useEtherBalance } from "@usedapp/core";
 import { formatEther } from "@ethersproject/units";
 import Identicon from "./Identicon";
 import {ethers} from "ethers";
-import {useEffect} from "react";
-import {wait} from "@testing-library/user-event/dist/utils";
-import ReactDOM from "react-dom";
+//import {useEffect} from "react";
 
-type Props = {
+/*type Props = {
     handleOpenModal: any;
-}
+}*/
 
 export default function ConnectButton() {
     const { error, activateBrowserWallet, account } = useEthers();

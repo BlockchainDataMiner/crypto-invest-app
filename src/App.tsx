@@ -1,18 +1,14 @@
 // App.tsx
 import { ChakraProvider } from "@chakra-ui/react";
-import Layout from "./components/Layout";
 import ConnectButton from "./components/ConnectButton";
 import InvestButton from "./components/InvestButton";
 import { Text } from '@chakra-ui/react'
-import { Box } from '@chakra-ui/react'
 import GetDividendsButton from "./components/GetDividendsButton";
 import WithdrawButton from "./components/WithdrawButton";
 import { Image } from '@chakra-ui/react'
-import { Center, Square, Circle } from '@chakra-ui/react'
-import React, {useEffect} from "react";
+//import React, {useEffect} from "react";
 import AddNetworkButton from "./components/AddNetworkButton";
 import { Grid, GridItem } from '@chakra-ui/react'
-import { Container } from '@chakra-ui/react'
 
 export default function App() {
 

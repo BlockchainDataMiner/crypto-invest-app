@@ -5,20 +5,20 @@ import { useEthers, useEtherBalance } from "@usedapp/core";
 import {
     NumberInput,
     NumberInputField,
-    NumberInputStepper,
-    NumberIncrementStepper,
-    NumberDecrementStepper,
+    //NumberInputStepper,
+    //NumberIncrementStepper,
+    //NumberDecrementStepper,
 } from '@chakra-ui/react'
 
 import React, {useEffect} from "react";
-import { SimpleGrid } from '@chakra-ui/react'
+//import { SimpleGrid } from '@chakra-ui/react'
 
 import { ethers } from "ethers";
-import {BigNumber} from "@ethersproject/bignumber";
+//import {BigNumber} from "@ethersproject/bignumber";
 
-type Props = {
+/*type Props = {
     handleOpenModal: any;
-}
+}*/
 
 export default function GetDividendsButton() {
     const {activateBrowserWallet, account} = useEthers();
