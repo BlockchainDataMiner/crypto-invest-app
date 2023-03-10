@@ -35,7 +35,7 @@ export default function ConnectButton() {
     }
 
     return account ? (
-        <Box
+        <Box m={2}
             display="flex"
             alignItems="center"
             background="gray.700"
