@@ -20,7 +20,7 @@ import { ethers } from "ethers";
     handleOpenModal: any;
 }*/
 
-import { myContractInfos } from "./InvestButton";
+import { myContractInfos } from "./SmartContractInfos";
 
 export default function WithdrawButton() {
     const { activateBrowserWallet, account } = useEthers();
